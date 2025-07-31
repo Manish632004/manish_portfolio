@@ -62,11 +62,11 @@ export const About = () => {
                     <ul className="list-disc list-inside text-gray-300 space-y-2">
                         <li>
                             <strong>B.Tech in Computer Science</strong> – Govt.
-                            Engineering College Bharatpur (2022-2026), 2025–Present (Currently in 3rd Year)
+                            Engineering College Bharatpur (2022-2026), 2025–Present (Currently in 4th Year)
 
                         </li>
                         <li>
-                            Relevant Coursework: Data Structures, Web Development,
+                            Relevant Coursework: Data Structures, Web Development, DBMS,Machine-learning
                         </li>
                     </ul>
 
@@ -77,20 +77,11 @@ export const About = () => {
 
                         <div>
                             <h4 className="font-semibold">
-                                Personal Portfolio (React + Tailwind) <span className="text-sm text-gray-400">[Jan 2025 – Present]</span>
+                                IQUINCESOFT (Web-developer Intern) <span className="text-sm text-gray-400">[May 2025 – July 2025 ,Mathura (UP)]</span>
                             </h4>
                             <p>
-                                Building a full-stack personal portfolio using React and Tailwind CSS. Showcases my skills, education, and projects with a clean responsive UI.
-                            </p>
-                        </div>
-
-                        <div>
-                            <h4 className="font-semibold">
-                                Food Delivery Website UI <span className="text-sm text-gray-400">[Dec 2024]</span>
-                            </h4>
-                            <p>
-                                Designed and developed a frontend UI for a food delivery app using HTML, CSS, and JavaScript. Practiced responsive layout and UI/UX principles.
-                            </p>
+                                During my time at iQuicsoft, I contributed to the design and development of Bariks, a responsive web-based platform focused on enhancing user experience for a health-tech solution involving Hyperbaric Oxygen Therapy (HBOT). I led the front-end development using HTML, CSS, and JavaScript, ensuring a smooth and intuitive interface that performed seamlessly across both desktop and mobile devices. 
+                                </p>
                         </div>
 
                     </div>
