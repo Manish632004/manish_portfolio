@@ -13,17 +13,23 @@ export const Project = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-              <h3 className="text-xl font-bold mb-2">
-                {" "}
-                Jarvis – AI-Powered Personal Assistant
-              </h3>
+              <h3 className="text-xl font-bold mb-2"> Ed-tech platform</h3>
               <p className="text-gray-400 mb-4">
-                A fully local personal assistant built using Python, capable of
-                performing smart tasks, answering queries, and managing local
-                resources efficiently.
+                A fully functional ed-tech web application that allows users to
+                create, consume, and rate educational content.
+                <br />
+                <b>Tech Stack:</b> ReactJS, NodeJS, ExpressJS, MongoDB, JWT,
+                Cloudinary
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["Python", "Groq", "Huggingface"].map((tech, key) => (
+                {[
+                  "ReactJS",
+                  "NodeJS",
+                  "ExpressJS",
+                  "MongoDB",
+                  "JWT",
+                  "Cloudinary",
+                ].map((tech, key) => (
                   <span
                     key={key}
                     className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
@@ -37,7 +43,125 @@ export const Project = () => {
 
               <div className="flex justify-between items-center">
                 <a
-                  href="https://github.com/Manish632004/Jarvis-Ai-assistant"
+                  href="https://github.com/Manish632004/Study_Notion"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  View Project →
+                </a>
+              </div>
+            </div>
+            <div
+              className="
+              glass p-6 rounded-xl border border-white/10 
+              hover:-translate-y-1 hover:border-blue-500/30
+              hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
+              transition-all
+            "
+            >
+              <h3 className="text-xl font-bold mb-2">
+                {" "}
+                Ecommerce App (ECOMZY)
+              </h3>
+              <p className="text-gray-400 mb-4">
+                • Developed a responsive ecommerce UI with product listing,
+                managing, and product details. <br />• Used Redux Toolkit for
+                managing cart items, global state, and async API calls. <br />•
+                Implemented cart operations (add/remove/update) with real-time
+                state updates.
+                <br />• Built reusable components and clean UI with modern React
+                practices.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["Html", "CSS", "JavaScript", "React", "Redux"].map(
+                  (tech, key) => (
+                    <span
+                      key={key}
+                      className="
+                      bg-blue-500/10 text-blue-500 py-1 px-3 
+                      rounded-full text-sm
+                      transition
+                      hover:bg-blue-500/20 hover:-translate-y-0.5
+                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
+                    "
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
+              </div>
+              <div className="flex justify-between items-center">
+                <a
+                  href="https://store-web-teal.vercel.app/"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  View Project →
+                </a>
+              </div>
+            </div>
+
+            <div
+              className="
+              glass p-6 rounded-xl border border-white/10 
+              hover:-translate-y-1 hover:border-blue-500/30
+              hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
+              transition-all
+            "
+            >
+              <h3 className="text-xl font-bold mb-2">My Developer Portfolio</h3>
+              <p className="text-gray-400 mb-4">
+                A sleek and fully responsive personal portfolio crafted using
+                React and TailwindCSS. Showcases my featured projects, skills,
+                and contact information with clean UI, smooth animations.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["Html", "CSS", "JavaScript", "React", "TailwindCss"].map(
+                  (tech) => (
+                    <span
+                      key={tech}
+                      className=" bg-blue-500/10 text-blue-500 py-1 px-3 
+                rounded-full text-sm transition hover:bg-blue-500/20 hover:-translate-y-0.5 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
+                    "
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
+              </div>
+              <div className="flex justify-between items-center">
+                <a
+                  href="https://manish632004.github.io/manish_portfolio/"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  View Project →
+                </a>
+              </div>
+            </div>
+
+            <div
+              className="glass p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)] transition-all
+            "
+            >
+              <h3 className="text-xl font-bold mb-2">Yoga Website</h3>
+              <p className="text-gray-400 mb-4">
+                A clean and responsive yoga website featuring wellness-inspired
+                UI, essential sections like Home, About, Services, and
+                Instructors, along with smooth animations and interactive
+                elements for a calming user experience.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["Html", "CSS", "JavaScript"].map((tech, key) => (
+                  <span
+                    key={key}
+                    className=" bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-smtransition hover:bg-blue-500/20 hover:-translate-y-0.5 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
+                    "
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex justify-between items-center ">
+                <a
+                  href="https://yoga-web-sigma.vercel.app/"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   View Project →
@@ -81,7 +205,7 @@ export const Project = () => {
               </div>
               <div className="flex justify-between items-center">
                 <a
-                  href="https://github.com/Manish632004/sidcupclone"
+                  href="https://manish632004.github.io/sidcupclone/"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   View Project →
@@ -89,6 +213,7 @@ export const Project = () => {
               </div>
             </div>
 
+            {/* Barkis */}
             <div
               className="
               glass p-6 rounded-xl border border-white/10 
@@ -97,58 +222,38 @@ export const Project = () => {
               transition-all
             "
             >
-              <h3 className="text-xl font-bold mb-2">My Developer Portfolio</h3>
+              <h3 className="text-xl font-bold mb-2">
+                {" "}
+                Bariks – Hyperbaric Oxygen Therapy (HBOT)
+              </h3>
               <p className="text-gray-400 mb-4">
-               A sleek and fully responsive personal portfolio crafted using React and TailwindCSS.
-Showcases my featured projects, skills, and contact information with clean UI, smooth animations.
+                Designed and developed a responsive web-based platform for
+                showcasing Bariks, a responsive health-tech interface for
+                Hyperbaric Oxygen Therapy (HBOT). <br /> • Created a user-centric
+                front-end with smooth navigation using HTML, CSS, and
+                JavaScript, optimized for mobile and desktop views. <br /> • Hosted the
+                project on GitHub Pages for easy access and demonstration during
+                technical discussions and portfolio showcases.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["Html", "CSS", "JavaScript", "React","TailwindCss"].map(
-                  (tech) => (
-                    <span
-                      key={tech}
-                      className=" bg-blue-500/10 text-blue-500 py-1 px-3 
-                rounded-full text-sm transition hover:bg-blue-500/20 hover:-translate-y-0.5 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
-                    "
-                    >
-                      {tech}
-                    </span>
-                  )
-                )}
-              </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="https://manish632004.github.io/manish_portfolio/"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                >
-                  View Project →
-                </a>
-              </div>
-            </div>
-
-            <div
-              className="glass p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)] transition-all
-            "
-            >
-              <h3 className="text-xl font-bold mb-2">Food Delivery Website – Frontend UI
-</h3>
-              <p className="text-gray-400 mb-4">
-               A modern and responsive frontend UI for a food delivery service, built using HTML, CSS, and JavaScript.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["Html", "CSS", "JavaScript"].map((tech, key) => (
+                {["Html", "CSS", "JavaScript","Figma"].map((tech, key) => (
                   <span
                     key={key}
-                    className=" bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-smtransition hover:bg-blue-500/20 hover:-translate-y-0.5 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
+                    className="
+                      bg-blue-500/10 text-blue-500 py-1 px-3 
+                      rounded-full text-sm
+                      transition
+                      hover:bg-blue-500/20 hover:-translate-y-0.5
+                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
                     "
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-              <div className="flex justify-between items-center ">
+              <div className="flex justify-between items-center">
                 <a
-                  href="#"
+                  href="https://barkis-responsive.vercel.app/"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   View Project →

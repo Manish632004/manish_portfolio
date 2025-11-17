@@ -66,8 +66,15 @@ export const About = () => {
 
                         </li>
                         <li>
-                            Relevant Coursework: Data Structures, Web Development, DBMS,Machine-learning
+                            7th Semester, CGPA: 7.2
+                        </li> <li>
+                            <strong>12th RBSE Board</strong> - Vivekanand Sr. Sec. School (2022)
+
                         </li>
+                        <li>
+                            Percentage: 81.2
+                        </li>
+                        
                     </ul>
 
                 </div>
