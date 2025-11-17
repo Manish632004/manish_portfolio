@@ -1,20 +1,20 @@
 import { useForm, ValidationError } from "@formspree/react";
+import { useEffect, useRef, useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Contact = () => {
   const [state, handleSubmit] = useForm("mjkoozna");
+  const formRef = useRef(null);
+  const [toast, setToast] = useState({ visible: false, message: "" });
 
-  const customHandleSubmit = async (e) => {
-    e.preventDefault();
-    const form = e.target;
-
-    await handleSubmit(e);
-
+  useEffect(() => {
     if (state.succeeded) {
-      alert("✅ Message sent successfully!");
-      form.reset();
+      setToast({ visible: true, message: "✅ Message sent successfully!" });
+      formRef.current?.reset();
+      const t = setTimeout(() => setToast({ visible: false, message: "" }), 2500);
+      return () => clearTimeout(t);
     }
-  };
+  }, [state.succeeded]);
 
   return (
     <section
@@ -23,11 +23,18 @@ export const Contact = () => {
     >
       <RevealOnScroll>
         <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
+          {toast.visible && (
+            <div className="fixed top-6 right-6 z-50">
+              <div className="bg-green-600/90 text-white px-4 py-3 rounded shadow-lg border border-white/10">
+                {toast.message}
+              </div>
+            </div>
+          )}
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             Get In Touch
           </h2>
 
-          <form onSubmit={customHandleSubmit} className="space-y-6">
+          <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
             <div className="relative">
               <input
                 type="text"
